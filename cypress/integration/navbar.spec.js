@@ -14,6 +14,7 @@ describe("Testing that links exist in the navbar", () => {
 
     cy.get('[href="/about"]').click();
 
+    cy.get('[href="about"]').click();
     cy.url().should("eq", baseUrl + "/about/");
   });
 });
